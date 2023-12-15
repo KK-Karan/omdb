@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>Vite App</title>
+    <script type="module" src="/src/main.js" defer></script>
+  </head>
+  <body>
+    <section>
+      <div id="app" class="parent container">
+        <h1>OMDb</h1>
+        <div class="search-bar">
+            <input type="search" class = "search" id="search" placeholder="Enter Movie Name">
+            <button class="search-btn" type="submit" id="button">
+              <span>Search</span>
+            </button>
+        </div>
+
+      </div>
+    </section>
+    <section class="container section movie__card" id="card">
+      <div class="movie__section">
+        <div id="poster_container">
+        </div>
+        <div id = movie_info class="movie__info">
+        </div>
+      </div>
+    </section>
+    <footer>
+       <p class="username">Created by<a href="https://github.com/KK-Karan" class="username">KK-Karan</a></p>
+    </footer>
+
+  </body>
+</html>
