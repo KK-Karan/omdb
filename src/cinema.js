@@ -6,7 +6,7 @@ async function getInfo(inputValue){
     let info = document.getElementById('movie_info')
     info.innerHTML = ''
     poster.innerHTML = ''
-    let response = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=c54084c&t=${inputValue}`)
+    let response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=c54084c&t=${inputValue}`)
     let movie= await response.json()
     console.log(movie)
 
