@@ -8,7 +8,6 @@ async function getInfo(inputValue){
     poster.innerHTML = ''
     let response = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=c54084c&t=${inputValue}`)
     let movie= await response.json()
-    console.log(movie)
 
     let movieTitle = document.createElement('p')
      movieTitle.textContent = movie.Title
